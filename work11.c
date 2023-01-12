@@ -18,6 +18,7 @@ int main(void){
     printf("c99-999 工大太郎２\n");
 <<<<<<< HEAD
     printf("c20-020 小川虎次郎")
+printf("c20-001 明日響矢\n");
 =======
 >>>>>>> a0a6dc3c782527e18fde1d4a6eafdeb45e1eac97
 >>>>>>> 1a4861045f88caae2b0698ff1c5ee6f0b05accb6
