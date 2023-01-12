@@ -2,6 +2,9 @@
 
 int main(void){
 <<<<<<< HEAD
+    printf("c20-018 遠藤飛鳥\n");
+=======
+<<<<<<< HEAD
     printf("c99-999 工大太郎\n");
 <<<<<<< HEAD
     printf("c20-110 吉田瑞生\n");
