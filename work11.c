@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main(void){
-    printf("c99-999 工大太郎\n");
+    printf("c19-037 國友竜暉\n");
     return 0;
 }
