@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(void){
+    printf("c19-033 木村峻輔\n");
 <<<<<<< HEAD
     printf("c19-037 國友竜暉\n");
 =======
