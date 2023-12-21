@@ -17,3 +17,5 @@ if __name__ == "__main__":
 
     print("Reversed:", reversed_text)
     print("Capitalized:", capitalized_text)
+    
+    print("hoge")
