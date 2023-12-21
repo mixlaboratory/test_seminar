@@ -1,6 +1,6 @@
 import os
 
-#文字列を削除する
+#文字列を反転する
 def reverse_string(input_str):
     return input_str[::-1]
     
@@ -19,3 +19,4 @@ if __name__ == "__main__":
     print("Capitalized:", capitalized_text)
     
     print("hoge")
+    print("Ooi")
