@@ -144,3 +144,18 @@ if __name__ == "__main__":
     fraction2 = Fraction([numerator2, denominator2])
     #結果（result）
     result = fraction1.plus(fraction2).reduction().display()
+
+    #相原惟人（足し算）
+
+
+    # ユーザーに数値を入力してもらう
+    num1 = float(input("最初の数を入力してください: "))
+    num2 = float(input("次の数を入力してください: "))
+
+   # 足し算を行う
+    result = num1 + num2
+
+   # 結果を表示する 
+   print("結果: {} + {} = {}".format(num1, num2, result))
+
+
