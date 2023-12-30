@@ -1,5 +1,6 @@
 import os
 import random
+from math import gcd
 
 #ヌメロン用
 num=[0,1,2,3,4,5,6,7,8,9]
@@ -38,6 +39,29 @@ def fibonacci(n):
         for i in range(2, n):
             fib.append(fib[i-1] + fib[i-2])
         return fib
+
+#分数の計算（山口幹太）    
+class Fraction:
+    def __init__(self, array):
+        self.array = array
+        self.numerator = array[0]
+        self.denominator = array[1]
+    #分数の足し算
+    def plus(self, other):
+        result_numerator = self.numerator * other.denominator + other.numerator * self.denominator
+        result_denominator = self.denominator * other.denominator
+        return Fraction([result_numerator, result_denominator])
+    #分数の約分
+    def reduction(self):
+        common_divisor = gcd(self.numerator, self.denominator)
+        self.numerator //= common_divisor
+        self.denominator //= common_divisor
+        return self
+    #分数の表示
+    def display(self):
+        print(f"{self.numerator}/{self.denominator}")
+
+
 
 #メイン関数
 if __name__ == "__main__":
@@ -108,3 +132,15 @@ if __name__ == "__main__":
 
     #朝田青葉プリント
     print("朝田青葉")
+
+    #山口幹太（分数の足し算（約分付き））
+    #分数1（fraction1）
+    numerator1 = int(input("分数 1 の分子を入力してください: "))
+    denominator1 = int(input("分数 1 (ゼロ以外) の分母を入力してください: "))
+    fraction1 = Fraction([numerator1, denominator1])
+    #分数2（fraction2）
+    numerator2 = int(input("分数 2 の分子を入力してください: "))
+    denominator2 = int(input("分数 2 (ゼロ以外) の分母を入力してください: "))
+    fraction2 = Fraction([numerator2, denominator2])
+    #結果（result）
+    result = fraction1.plus(fraction2).reduction().display()
