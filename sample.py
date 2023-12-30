@@ -25,6 +25,20 @@ def shiki(x, y, z):
     w = w - intz
     return w
 
+#フィボナッチ数列の計算
+def fibonacci(n):
+    if n <= 0:
+        return []
+    elif n == 1:
+        return [0]
+    elif n == 2:
+        return [0, 1]
+    else:
+        fib = [0, 1]
+        for i in range(2, n):
+            fib.append(fib[i-1] + fib[i-2])
+        return fib
+
 #メイン関数
 if __name__ == "__main__":
     text = input("Enter a string: ")
@@ -87,5 +101,7 @@ if __name__ == "__main__":
             break
         else:
             count+=1
-    
-    
+
+    #荒木沙紀フィボナッチ数列
+    n = 10  # 長さの指定
+    print(fibonacci(n))  
