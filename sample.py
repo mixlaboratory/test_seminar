@@ -61,6 +61,18 @@ class Fraction:
     def display(self):
         print(f"{self.numerator}/{self.denominator}")
 
+#菊野創一朗
+#素数の出力
+def prime(N):
+  primes = []
+  for i in range(2, N + 1):
+    primes.append(i)
+    for p in range(2, i):
+      if i % p == 0:
+        primes.remove(i)
+        break
+  return primes
+
 
 
 #メイン関数
@@ -176,6 +188,12 @@ if __name__ == "__main__":
     num2 = float(input("次の数を入力してください: "))
     result = num1 / num2
     print("結果: {} ÷ {} = {}".format(num1, num2, result))
+
+
+    #菊野創一朗
+    #入力された数字までの素数の出力
+    N = int(input("入力された数字までの素数を出力します: "))
+    print(prime(N))
 
 
 
