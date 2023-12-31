@@ -156,6 +156,27 @@ if __name__ == "__main__":
     result = num1 + num2
 
    # 結果を表示する 
-   print("結果: {} + {} = {}".format(num1, num2, result))
+    print("結果: {} + {} = {}".format(num1, num2, result))
+
+   #爲房啓介
+   #引き算
+    num1 = float(input("最初の数を入力してください: "))
+    num2 = float(input("次の数を入力してください: "))
+    result = num1 - num2
+    print("結果: {} - {} = {}".format(num1, num2, result))
+
+   #かけ算
+    num1 = float(input("最初の数を入力してください: "))
+    num2 = float(input("次の数を入力してください: "))
+    result = num1 * num2
+    print("結果: {} × {} = {}".format(num1, num2, result))
+
+    #割り算
+    num1 = float(input("最初の数を入力してください: "))
+    num2 = float(input("次の数を入力してください: "))
+    result = num1 / num2
+    print("結果: {} ÷ {} = {}".format(num1, num2, result))
+
+
 
 
