@@ -87,6 +87,7 @@ if __name__ == "__main__":
     
     print("hoge")
     print("Ooi")
+    print("add")
     
     #高梨美雪(好きな数字(整数)を3つ入力し、結果をprintする)
     a = input("put number1: ")
