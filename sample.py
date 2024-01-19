@@ -2,6 +2,9 @@ import os
 import random
 from math import gcd
 
+#現在日時ライブラリ(小西悠)
+import datetime
+
 #ヌメロン用
 num=[0,1,2,3,4,5,6,7,8,9]
 ans=random.sample(num,3)
@@ -92,6 +95,10 @@ def jyanken(a,b):
     else:
         print('1~3の数字を入力してください。')
 
+#現在日時を取得して表示
+def viewdt():
+    dt = datetime.datetime.now()
+    print(dt)
 
 
 #メイン関数
@@ -221,5 +228,10 @@ if __name__ == "__main__":
      #相手の出す手をランダムに発生
      jyanken(a,b)
      print(Genimai)
+
+    #小西悠
+    print("YuKonishi")
+    #現在日時を取得して表示
+    viewdt()
 
 
